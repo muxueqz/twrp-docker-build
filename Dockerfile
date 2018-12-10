@@ -1,4 +1,4 @@
-FROM openjdk:7-slim
+FROM openjdk:8-slim
 MAINTAINER ElXreno <elxreno@gmail.com>
 
 ENV DEBIAN_FRONTEND noninteractive
