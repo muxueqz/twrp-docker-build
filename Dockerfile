@@ -1,4 +1,4 @@
-FROM openjdk:8-slim
+FROM ubuntu:18.04
 MAINTAINER ElXreno <elxreno@gmail.com>
 
 ENV DEBIAN_FRONTEND noninteractive
