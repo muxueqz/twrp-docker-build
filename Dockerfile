@@ -42,6 +42,7 @@ RUN apt-get -qq update \
 RUN curl https://storage.googleapis.com/git-repo-downloads/repo > /bin/repo && chmod a+x /bin/repo
 
 ENV REPO https://github.com/minimal-manifest-twrp/platform_manifest_twrp_omni
-RUN \
-  repo init -u ${REPO} -b twrp-9.0
+RUN cd /repo \
+  && repo init -u ${REPO} -b twrp-9.0
+  && repo sync
 VOLUME /build
