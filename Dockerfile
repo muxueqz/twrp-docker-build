@@ -35,6 +35,7 @@ RUN apt-get -qq update \
     xsltproc \
     zip \
     zlib1g-dev \
+    openssh-client \
     && apt-get purge openjdk-11-jre-headless -y \
     && apt-get autoremove -y \
     && rm -rf /var/lib/apt/lists/*
