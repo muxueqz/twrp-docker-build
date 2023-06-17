@@ -27,6 +27,7 @@ RUN apt-get -qq update \
     maven \
     openjdk-8-jdk \
     python3 \
+    python \
     rsync \
     schedtool \
     unzip \
