@@ -43,6 +43,6 @@ RUN curl https://storage.googleapis.com/git-repo-downloads/repo > /bin/repo && c
 
 ENV REPO https://github.com/minimal-manifest-twrp/platform_manifest_twrp_omni
 RUN cd /repo \
-  && repo init -u ${REPO} -b twrp-9.0
+  && repo init -u ${REPO} -b twrp-9.0 \
   && repo sync
 VOLUME /build
